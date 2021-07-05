@@ -1,3 +1,5 @@
+#Calculate no of ways of climbing n stairs if the person can climb m steps at a time
+
 n=int(input())
 j=int(input())
 
@@ -11,5 +13,3 @@ for i in range(2,n+1):
 		res[i] = res[i] + res[i-k] 
 		k += 1
 print(res[n] )
-
- 
